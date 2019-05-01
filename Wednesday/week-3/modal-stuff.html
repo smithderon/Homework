@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .modal-dialog {
+            display: flex;
+            justify-content: center;
+            align-self: center;
+            flex-flow: column wrap;
+            background-color: lightgray;
+            border-style: solid;
+            border-radius: 5%;
+            max-width: 30%;
+
+        }
+
+        body {
+            background: url(https://weather.ambient-mixer.com/images_template/1/f/1/1f1d36ceaca560be1470c437c0eaee98_full.jpg);
+            background-size: cover
+        }
+
+        .thing {
+            display: flex;
+            height: 100vh;
+            justify-content: space-around;
+            align-content: space-around;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="thing">
+        <div class="modal-dialog">
+            <div class="modal-header">
+                <label class="modal-title">Hello</label>
+            </div>
+            <div class="modal-content">
+                <p>Would you like to subscribe to our email newsletter?</p>
+            </div>
+            <div class="modal-buttons">
+                <button>Ok</button>
+                <button>Cancel</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
