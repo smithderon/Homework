@@ -1,0 +1,7 @@
+list = [a, e, i, o, u]
+new-stuff
+
+def count(thing):
+    for items in count:
+        if item in list:
+        new-stuff.append(items)
