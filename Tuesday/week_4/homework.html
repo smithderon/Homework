@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div id="first" class="container-fluid">
+        </div>
+    </div>
+
+
+
+
+    <!-- Optional JavaScript -->
+
+    <script>
+        //container0
+
+        var nani0 = document.querySelector("div.container-fluid")
+        var nani1 = document.getElementById("first");
+        var nope = document.createElement("h1");
+        var nani2 = document.createElement("a");
+        var thattoo = document.createElement("h3");
+        var thatdos = document.createElement("h3");
+        thattoo.textContent = "Home";
+        thatdos.textContent = "Categories!";
+        nope.textContent = "HighOnLife";
+        nani1.appendChild(nope);
+        nani1.appendChild(nani2);
+        nani2.appendChild(thattoo);
+        nani1.appendChild(thatdos);
+
+        nani1.setAttribute("style", "background-color: blue; height: 250px; color: white")
+        nani1.setAttribute("class", "d-flex align-items-center justify-content-start display-1")
+        nope.setAttribute("class", "px-5")
+        thattoo.setAttribute("class", "px-5 display-5")
+        thatdos.setAttribute("class", "px-1 text-monospace")
+        nani2.setAttribute("href","#")
+
+        //container1
+
+        var thing1 = document.createElement("div")
+        var stuff = document.createElement("div")
+        var content1 = document.createElement("div")
+        stuff.textContent = "Blah Blah Blah"
+        content1.textContent = "So this stuff goes in the same container as blah blah blah..."
+        nani0.appendChild(thing1)
+        thing1.appendChild(stuff)
+        thing1.appendChild(content1)
+        thing1.setAttribute("class", "container d-flex bg-light align-self-start my-3")
+        thing1.setAttribute("style", "height: 400px;")
+        stuff.setAttribute("class", "display-4 p-3")
+        content1.setAttribute("class", "align-self-end")
+
+        //container2
+
+        var thing2 = document.createElement("div")
+        var orange1 = document.createElement("div")
+        var header1 = document.createElement("h2")
+        var content2 = document.createElement("div")
+        var ha1 = document.createElement("p")
+        content2.textContent = "100 views & 500 likes"
+        header1.textContent = "MAGNIFICO"
+        ha1.textContent = "Some more stuff that goes inside other containers and things and stuff."
+
+        nani0.appendChild(thing2)
+        nani0.appendChild(orange1)
+        thing2.appendChild(header1)
+        orange1.appendChild(content2)
+        thing2.appendChild(ha1)
+
+        header1.setAttribute("style", "color: blue")
+        thing2.setAttribute("class", "container d-flex bg-muted align-self-start mt-5")
+        thing2.setAttribute("style", "height: 350px;")
+        orange1.setAttribute("style", "background-color: orange; height: 50px")
+        orange1.setAttribute("class", "container d-flex align-items-center")
+        content2.setAttribute("style", "color: white")
+        ha1.setAttribute("class", "align-self-end")
+
+        //container3
+        var thing3 = document.createElement("div")
+        var orange2 = document.createElement("div")
+        var content3 = document.createElement("div")
+        var header3 = document.createElement("h2")
+        var ha2 = document.createElement("p")
+        content3.textContent = "100 views & 500 likes"
+        header3.textContent = "MAGNIFICO"
+        ha2.textContent = "Some more stuff that goes inside other containers and things and stuff."
+
+        nani0.appendChild(thing3)
+        nani0.appendChild(orange2)
+        thing3.appendChild(header3)
+        orange2.appendChild(content3)
+        thing3.appendChild(ha2)
+
+        thing3.setAttribute("class", "container d-flex bg-muted align-self-start mt-5")
+        thing3.setAttribute("style", "height: 350px;")
+        orange2.setAttribute("style", "background-color: orange; height: 50px")
+        orange2.setAttribute("class", "container d-flex align-items-center")
+        content3.setAttribute("style", "color: white")
+        ha2.setAttribute("class", "align-self-end") 
+        header3.setAttribute("style", "color: blue")
+
+    // var mainDiv = document.querySelector("div");
+    // var innerDiv = document.createElement("div");
+    // innerDiv.style = "background-color: blue";
+
+    // innerh4 = document.createElement("h4");
+    // innerh4.textContent = "Nani SORE"
+    // innerDiv.appendChild(innerh4)
+    // mainDiv.appendChild(innerDiv)
+
+    </script>
+
+
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
