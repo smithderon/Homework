@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    #redthingy{
+        background-color: tomato;
+        width: 200px;
+        height: 200px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 35px;
+    }
+    </style>
+</head>
+<body>
+    
+    <div id="redthingy">
+        <div>
+            BIG RED
+        </div>
+        <div id="count">
+
+        </div>
+    </div>
+
+    <script>
+    var rbutton = document.getElementById("redthingy")
+
+    var clickity = 0
+    rbutton.addEventListener("click", function(ha){
+        clickity += 1
+        let count = document.getElementById("count")
+        count.textContent = clickity.toString() 
+    })
+    </script>
+</body>
+</html>
