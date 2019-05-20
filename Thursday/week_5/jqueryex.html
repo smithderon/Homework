@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    header{
+        background-color:turquoise;
+        height: 325px;
+        width: 100%;
+
+    }
+    </style>
+</head>
+<body>
+    
+
+    <header>
+            <h1>Konnichi Wa!</h1>
+            <h2>YEAH, YEAH, WHATEVER!</h2>
+            <img width="320px" id="anime" src="https://assets3.thrillist.com/v1/image/2728564/size/gn-gift_guide_variable_c.jpg" alt="">
+            <p data-nanisore="Kore!">Some text or some such</p>
+    </header>
+
+    <main>
+        <p id="styleThing">
+            I intend to make the greatest games that a gamer can appreciate! Nothing can stop me! Not money, not people, not motivation, NOTHING!!!!
+        </p>
+    </main>
+
+
+
+
+    <form action="jqueryex.html" method="GET">
+    <fieldset>
+        <input id="name1" type="text" name="name" placeholder="Nani ga namae desuka?" required minlength="4" maxlength="5">
+        <input type="radio" name="Activation">
+        <input type="checkbox" name="Currently">
+        <input type="password" name='password'required minlength="10">
+        </fieldset>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    
+    </form>
+        <script
+        src="http://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+        <script>
+        // $(document).ready(function(){
+            // jquery code
+        // })
+
+        $(function(){
+            // let $p = $("#styleThing").html("Kiero!")
+            //different format
+            // document.getElementById("anime")
+            // $('#puppies')
+            // $(".styleThing")
+            // $('p')
+            // let $stuff = $('p')
+            // let me = $('[data-nanisore="kore"]')
+            // console.log(me)
+
+            let $name = $("#name1")
+        $name.addEventListener("input", (e) => {
+            if ($name.validity.range){
+                $name.setcustomValidity("Jodan wai yo!? N-A-M-A-E W-A!")
+            }
+            else{
+                $name.setcustomValidity("")
+            }
+        })
+        })
+
+        let $name = $("#name1")
+        $name.addEventListener("input", (e) => {
+            if ($name.validity.tooLong){
+                $name.setcustomValidity("Jodan wai yo!? N-A-M-A-E W-A!")
+            }
+            else{
+                $name.setcustomValidity("")
+            }
+        })
+        </script>
+</body>
+</html>
