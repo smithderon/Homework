@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+    // let objJSONString = `{"name": "DigitalCrafts", "location": "Houston"}`
+    // console.log(typeof(objJSONString))
+    // let objJSONobject = JSON.parse(objJSONString)
+    // console.log(objJSONobject.location)
+
+    var request = new XMLHttpRequest()
+    let method = "GET"
+    let url = `https://developer.mozilla.org/en-US/`
+    request.open(method, url, true)
+    request.onreadystatechange = function(){
+        if (request.readyState == 4 && request.status == 200){
+            console.log()
+        }
+    }
+    </script>
+</body>
+</html>
