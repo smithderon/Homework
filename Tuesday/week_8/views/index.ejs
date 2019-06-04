@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div> Nani Sore <br></div>
+    <form action="/" method="POST">
+    name: <input id="name" type="text" name="name"> <br>
+    email: <input id="email" type="text" name="email"> <br>
+    number: <input id= "numb" type="text" name="number"> <br>
+    </form>
+    <button id="sub" type="submit">SUBMIT</button>
+    <div id="message"></div>
+    <script>
+        let button = document.getElementById("sub")
+        button.onclick((that)=>{
+        that.preventDefault()
+
+        fetch("/", {
+            method: "POST",
+            headers: {"Content-Type": "application/json"},
+            body: JSON.stringify({
+                name: document.getElementById("name").value,
+                email: document.getElementById("email").value,
+                number: document.getElementById("numb").value
+            })
+        })
+        .then((data)=>{
+            document.getElementById("message").innerHTML = "Data submitted!"
+        })
+        })
+        //for jQuery use $.post, not $.get in place of the api call "fetch"
+        // $("#id").val() specifies the value instead of .value
+        //post accepts a "successfunction" as a parameter like this:
+
+        // $.post("url", {
+        //     stuff
+        // } successfunction)
+
+        //the "successfunction" needs to be created by the programmer
+    </script>
+</body>
+</html>
